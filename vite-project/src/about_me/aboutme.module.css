@@ -1,0 +1,37 @@
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.aboutMe__title{
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.aboutMe__layout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.aboutMe__image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.aboutMe__paragraph{
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    text-align: left;
+}

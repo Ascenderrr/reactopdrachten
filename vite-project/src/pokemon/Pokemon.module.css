@@ -1,0 +1,28 @@
+.fire{
+    background-color: red;
+}
+
+.grass{
+    background-color: green;
+    
+}
+
+.water{
+    background-color: blue;
+}
+
+.poison{
+    background-color: purple;
+}
+
+.normal{
+    background-color: grey;
+}
+
+.flying{
+    background-color: lightblue;
+}
+
+.stats{
+    list-style: none;
+}

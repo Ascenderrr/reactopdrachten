@@ -1,0 +1,38 @@
+.cookieCard {
+    padding: 1rem;
+    border: 1px solid #e0d4c8;
+    border-radius: 12px;
+    background: #fff6eb;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title { margin: 0; color: #4a2b12; }
+.subtitle, .info { margin: 0; color: #6f4a2e; }
+.score { font-weight: 700; color: #3a220f; }
+
+.cookieButton {
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #e8a561, #bb6d32 70%);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cookieButton:active { transform: scale(0.97); }
+
+.upgrade {
+    padding: 0.45rem 0.8rem;
+    border: 1px solid #8e5d35;
+    border-radius: 8px;
+    background: #f2dec8;
+    color: #3a210e;
+    cursor: pointer;
+}
+
+.upgrade:disabled { opacity: 0.55; cursor: not-allowed; }
