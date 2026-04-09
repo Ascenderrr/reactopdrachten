@@ -17,6 +17,7 @@
 .bookContainer {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .bookTitle {

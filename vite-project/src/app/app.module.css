@@ -1,0 +1,47 @@
+.appShell {
+	min-height: 100vh;
+	padding: 2rem 1rem 3rem;
+}
+
+.navbar {
+	max-width: 960px;
+	margin: 0 auto 2rem;
+	padding: 1rem 1.25rem;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.72);
+	border: 1px solid rgba(120, 120, 120, 0.18);
+	box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+	backdrop-filter: blur(10px);
+}
+
+.list {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	flex-wrap: wrap;
+}
+
+.listItem {
+	margin: 0;
+}
+
+.link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 88px;
+	padding: 0.65rem 1rem;
+	border-radius: 999px;
+	color: #2f2a26;
+	background: linear-gradient(180deg, #fffdf8, #f4eadc);
+	border: 1px solid rgba(141, 104, 70, 0.2);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.link:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 8px 16px rgba(84, 58, 32, 0.12);
+}

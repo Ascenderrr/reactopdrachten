@@ -1,40 +1,48 @@
-import './App.css'
-import styles from './App.module.css'
-import { AboutMe } from '../about_me/AboutMe'
-import { Top10 } from '../top10/Top10'
-import { Cookie } from '../cookie/cookie'
-import { Pokemon } from '../pokemon/Pokemon'
-
-
-
-
-
-
-
+import "./App.css"
+import styles from './app.module.css'
+import { Link, Route, Routes } from 'react-router-dom';
+import { About } from '../pages/About';
+import { Games } from '../pages/Games';
+import { Contact } from '../pages/Contact';
+ 
+function NotFoundPage() {
+  return (
+    <section className={styles.pageSection}>
+      <h2>Page Not Found</h2>
+      <p>Deze pagina bestaat niet.</p>
+      <Link className={styles.navLink} to="/">Terug naar Home</Link>
+    </section>
+  )
+}
+ 
 function App() {
   return (
-    <main>
-      <navbar className={styles.navbar}>
+    <main className={styles.app}>
+      <nav className={styles.navbar}>
         <ul className={styles.list}>
           <li className={styles.listItem}>
-            <a href="#">Home</a>
+            <Link className={styles.navLink} to="/about">About</Link>
           </li>
           <li className={styles.listItem}>
-            <a href="/about">About</a>
+            <Link className={styles.navLink} to="/games">Games</Link>
           </li>
           <li className={styles.listItem}>
-            <a href="/contact">Contact</a>
+            <Link className={styles.navLink} to="/contact">Contact</Link>
           </li>
         </ul>
-      </navbar>
-      <AboutMe />
-      <Top10 />
-      <Cookie />
-      <Pokemon />
+      </nav>
+ 
+      <Routes>
+        <Route index element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/games" element={<Games />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </main>
   )
 }
-
-
-
+ 
 export default App
+ 
+ 
